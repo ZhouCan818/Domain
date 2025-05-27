@@ -1,4 +1,1 @@
 cdn.zhoucan.cn
-git add CNAME
-git commit -m "Add CNAME for www.zhoucan.cn"
-git push origin main
