@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>欢迎来到我的小站！</title>
+    <link rel="apple-touch-icon" sizes="64x64" href="img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            font-size: 16px;
+            color: #000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+        }
+
+        *,
+        :after,
+        :before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            /*内边距和边框都将在已设定的宽度和高度内进行绘制*/
+        }
+
+
+        *,
+        :after,
+        :before,
+        img {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        img {
+            box-sizing: border-box;
+            vertical-align: middle;
+            /*图片在div里面垂直居中对齐*/
+        }
+
+        .row {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            max-width: 450px;
+        }
+
+        .content p {
+            text-align: center;
+        }
+
+        .weixin-code {
+            width: 200px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .weixin-code img {
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="content">
+            <h3 id="item">
+            </h3>
+            <p>您访问的域名正在出售中……</p>
+            <p>微信：zhoucan818</p>
+            <p>QQ：381138166</p>
+            <p>E-mail：381138166#qq.com</p>
+            <div class="weixin-code"><img src="img/weixin-p.png"></div>
+        </div>
+    </div>
+    
+    <script>
+        //判断域名代码
+        var url = window.location.href;  // 返回完整 URL (https://www.runoob.com/html/html-tutorial.html)
+        var pathname = window.location.pathname; // 返回路径部分 (/html/html-tutorial.html)
+        var origin = window.location.origin;   // 返回基础 URL (https://www.runoob.com/)
+        var domain = document.domain;  // 返回域名部分 (www.runoob.com)
+        var host = window.location.host;//获取hostname 和 port 号码。
+        //document.write(domain) //输出需要显示的项。
+        document.getElementById('item').innerText = (host);
+    </script>
+</body>
+
+</html>
